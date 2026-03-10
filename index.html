@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DRJ FOODS — Order delicious food from the best restaurants near you. Fast delivery, amazing cuisines, unforgettable flavors.">
+  <title>DRJ FOODS — Delicious Food, Delivered Fast</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='24' font-size='24'>🍽️</text></svg>">
+</head>
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🍽️</div>
+        <div class="logo-text">DRJ <span>FOODS</span></div>
+      </a>
+      <nav class="nav">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="restaurants.html">Restaurants</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+        <a href="cart.html" class="cart-btn" id="headerCartBtn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          Cart
+          <span class="cart-badge" id="cartBadge"></span>
+        </a>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="images/hero-banner.png" alt="Delicious food spread" loading="eager">
+    </div>
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Now delivering in your area
+      </div>
+      <h1>Your Favourite <br><span class="highlight">Food, Delivered</span> <br>In Minutes</h1>
+      <p class="hero-subtitle">Discover the best restaurants and cuisines around you. From comfort food to gourmet dining — we've got your cravings covered.</p>
+      <div class="hero-actions">
+        <a href="restaurants.html" class="btn btn-primary">
+          Order Now
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#how-it-works" class="btn btn-secondary">How It Works</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-value">500+</div>
+          <div class="stat-label">Restaurants</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">10k+</div>
+          <div class="stat-label">Happy Customers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">30 min</div>
+          <div class="stat-label">Avg. Delivery</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== HOW IT WORKS ==================== -->
+  <section class="how-it-works section" id="how-it-works">
+    <div class="container">
+      <h2 class="section-title">How It Works</h2>
+      <p class="section-subtitle">Three simple steps to satisfy your hunger</p>
+      <div class="steps-grid">
+        <div class="step-card reveal">
+          <div class="step-icon">🏪</div>
+          <span class="step-num">1</span>
+          <h3>Choose a Restaurant</h3>
+          <p>Browse through hundreds of top-rated restaurants near you. Filter by cuisine, rating, or delivery time.</p>
+        </div>
+        <div class="step-card reveal">
+          <div class="step-icon">🍔</div>
+          <span class="step-num">2</span>
+          <h3>Pick Your Food</h3>
+          <p>Explore mouth-watering menus. Add your favourites to the cart with just a tap.</p>
+        </div>
+        <div class="step-card reveal">
+          <div class="step-icon">🚀</div>
+          <span class="step-num">3</span>
+          <h3>Fast Delivery</h3>
+          <p>Sit back and relax. We'll deliver your order hot and fresh straight to your doorstep.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FEATURED RESTAURANTS ==================== -->
+  <section class="section" id="featured">
+    <div class="container">
+      <h2 class="section-title">Featured Restaurants</h2>
+      <p class="section-subtitle">Handpicked by our team for an exceptional dining experience</p>
+      <div class="featured-grid" id="featuredGrid">
+        <!-- Rendered by JS -->
+      </div>
+      <div style="text-align:center; margin-top: var(--space-2xl);">
+        <a href="restaurants.html" class="btn btn-secondary">View All Restaurants →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== POPULAR CUISINES ==================== -->
+  <section class="cuisine-section">
+    <div class="container">
+      <h2 class="section-title" style="text-align:center; margin-bottom: var(--space-xl);">Explore Cuisines</h2>
+      <div class="cuisine-grid">
+        <a href="restaurants.html?cuisine=Italian" class="cuisine-chip"><span class="emoji">🍕</span> Italian</a>
+        <a href="restaurants.html?cuisine=Indian" class="cuisine-chip"><span class="emoji">🍛</span> Indian</a>
+        <a href="restaurants.html?cuisine=Chinese" class="cuisine-chip"><span class="emoji">🥡</span> Chinese</a>
+        <a href="restaurants.html?cuisine=American" class="cuisine-chip"><span class="emoji">🍔</span> American</a>
+        <a href="restaurants.html?cuisine=Japanese" class="cuisine-chip"><span class="emoji">🍣</span> Japanese</a>
+        <a href="restaurants.html?cuisine=Healthy" class="cuisine-chip"><span class="emoji">🥗</span> Healthy</a>
+        <a href="restaurants.html" class="cuisine-chip"><span class="emoji">🌮</span> All Cuisines</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <div class="logo-icon">🍽️</div>
+            <div class="logo-text">DRJ <span>FOODS</span></div>
+          </div>
+          <p>Your favourite food, delivered fast. We partner with the best local restaurants to bring you meals you'll love.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram">📷</a>
+            <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+            <a href="#" class="social-link" aria-label="Facebook">📘</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#">About Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Blog</a>
+          <a href="#">Press</a>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="#">Help Center</a>
+          <a href="#">Safety</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="#">📧 support@drjfoods.com</a>
+          <a href="#">📞 +91 98765 43210</a>
+          <a href="#">📍 Mumbai, India</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 DRJ FOODS. All rights reserved.</span>
+        <span>Made with 🧡 in India</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div class="toast" id="toast">
+    <span class="toast-icon">✓</span>
+    <span id="toastMessage">Item added to cart!</span>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    // Render Featured Restaurants
+    document.addEventListener('DOMContentLoaded', () => {
+      const grid = document.getElementById('featuredGrid');
+      const featured = restaurants.filter(r => r.featured);
+
+      featured.forEach((r, i) => {
+        grid.innerHTML += createRestaurantCard(r, i);
+      });
+
+      // Scroll reveal
+      initScrollReveal();
+    });
+  </script>
+</body>
+</html>
